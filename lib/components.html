@@ -2,122 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>component library</title>
-    <link href="/style.css" rel="stylesheet">
+    <title>adarsh balika component library</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <h1> welcome to vijay's tutorial </h1>
-    <p>  this is a paragraph </p>
-    
-    <hr> line break 
-
-
-    <h2> @container</h2>
-
-    <h3> fluid container </h3>
-    <div class="container"> this is a centered container which contains a long keyword </div>
-
-    <h3> @ center container</h3>
-    <div class= "container container-center" > this is  a centered container></div>
+    <h1> component library </h1>
+    <p><strong>Adarsh Balika</strong> is attending neog.camp and is currently completing levelZero one weekend and assignment at a time.</p>
+    <p>This is a component library created by her to better design each element.</p>
+    <p>After creating this library she is going to use the components in her <strong>portfolio, blog and all projects</strong> created. This will ensure that all her projects have <strong>consistent themeing and styling</strong></p>
 
     <hr>
-<h2>links</h2>
 
-<a class = "link primary-link" href="/">Primary link</a>
-<a class="link secondary-link" href="/">Secondary link</a>
+    <h2>@typography</h2>
 
-<hr>
+    <h1>The biggest heading h1</h1>
+    <h2>The second biggest heading h2</h2>
+    <p>This is normal text. Long running text would look like this on your website. This will auto fold based on the width</p>
+    <p class="text-sm">This is relatively smaller text</p>
 
-  
-  <h3> unordered list</h3>
-  <p> this doesn't contains bullet</p>
+    <hr>
+    <h2>@containers </h2>
 
-  <ul class="list-non-bullet">
-   <li> t1</li>
-   <li> t2</li>
-
-  </ul>
-
-  <h3> unordered inlinelist</h3>
-  <p> this doesn't contains bullet</p>
-
-  <ul class="list-non-bullet">
-   <li class="list-item-inline"> list inline text1</li>
-   <li class="list-item-inline">list inline text2</li>
-
-  </ul>
-  
- 
-
-  <h3> ordered list</h3>
-
-  <ol>
-  <li> milk</li>
-  <li> tea</li>
-
-  </ol>
-
-  <nav class="navigation container">
-  <div class="nav-brand"> I am developer</div>
-  <ul class="list-non-bullet nav-pills"> 
-<li class="list-item-inline"> <a class="link link-active" href= "/">home</a>  </li>
-<li class="list-item-inline">  <a class="link" href="/projects.html">projects</a> </li>
-<li class="list-item-inline">  <a class="link" href="/blogs.html"> blogs</a> </li>
-
-  </ul>
-
-
-  </nav>
-
-  <hr>
-
-  <h2> @ header</h2>
-
-  <header class="hero">  <img class="hero-img" src="images/2dff6c50-ff98-4926-a376-714414fafc49.jpg"/>
-      <h1 class="hero-heading"> Vijay is a <span class="heading-inverted">web developer</span>  </h1>
-  </header> 
-
-  <hr>
-  <h2>@section</h2>
-
-  <section class="section"> 
-    <div class="container container-center">
-
-      <h1>  white section</h1>
-      <p> this will have white background</p>
+    <h3>@fluid container</h3>
+    <div class="container-fluid">
+        This is going to be a fluid container. It will go full width of page. With some margin.
     </div>
 
-  
-
-  </section>
-
-  <section class="section ow"> 
-    <div class="container container-center">
-      <h1> off white section</h1>
-      <p> this will have grey background</p>
-      
+    <h3>@center container</h3>
+    <div class="container">
+        This is going to be a center container. It will go till a given width and center content.
     </div>
 
+    <hr>
+    <h2>@links</h2>
 
-   
+    <a  class="primary-link" href="/"> Primary Link</a>
+    <a class="secondary-link" href="/"> Secondary Link</a>
 
-  </section>
+    <hr>
 
-  <footer class="footer">
+    <h2>@lists</h2>
 
-    <div class="footer-header"> some text </div>
-    <ul class="social-links list-non-bullet">
-      <li class="list-item-inline"> <a  href="/" > Social one </a> </li>
-      <li class="list-item-inline"> <a href="/" > Social two </a> </li>
-      <li class="list-item-inline"> <a href="/" > Social three </a> </li>
+    <h3>unordered lists</h3>
 
+    <p>We don't want to show bullets in the unordered list. We'll remove that with CSS.</p>
 
+    <ul class="unordered">
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>
     </ul>
-  </footer>
 
+    <h3>inline lists</h3>
+
+    <p>Instead of going in a new row, we will create a list which will take columns.</p>
+
+    <ul class="unordered list-inline">
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>
+    </ul>
+
+    <h3>reverse ordered lists</h3>
+    <p>Counting of will go reverse for this list </p>
+    <ol reversed>
+        <li>something</li>
+        <li>something else</li>
+        <li>something elser</li>
+    </ol>
+
+
+    <hr>
+
+
+    <h2>@nav</h2>
+    <p>Navigation is used on the top of the page and used to get to different pages</p>
+    <nav class="navigation">
+        <div class="container-fluid">
+        <div class="brand">theBrandName</div>
+        <ul>
+            <li>
+                <a href="/" class="active">home</a>
+                
+            </li>
+            <li>
+                <a href="/">products</a>
+                
+            </li>
+            <li>
+                <a href="/">about</a>
+            </li>
+        </ul>
+        </div>
+        
+    </nav>
+    <hr>
+
+
+    <h2> @header </h2>
+
+    <header class="container hero">
+        <img src="header-image.svg"/>
+        <h1> this is heading h1 inside header</h1>
+    </header>
+
+    <hr />
+
+    <h2> @section</h2>
+
+    <p> A section is used to separate parts of pages. In marketing websites you would have seen a header followed by sections of features, team, pricing, contact info etc.</p>
+    <h3>@normal section</h3>
+    <section class="section">
+        <h2> heading inside section</h2>
+        <p>Text defining this section and many more things</p>
+        <a href="" class="primary-link"> Primary Button</a>
+    </section>
+
+    <h3>@an off white section</h3>
+    <section class="section ow">
+        <h2> inside off white section</h2>
+        <p>Text defining this section and many more things</p>
+        <a href="/" class="primary-link"> Primary Button</a>
+    </section>
+
+    <hr>
+
+    
+    <h2>@footer</h2>
+    <footer class="footer container-fluid">
+        <div class="container">
+            <div class="heading">header inside footer</div>
+            <ul class="unordered list-inline">
+                <li>socialone</li>
+                <li>socialtwo</li>
+                <li>socialthree</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
-
 
